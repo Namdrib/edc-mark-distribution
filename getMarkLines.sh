@@ -6,9 +6,9 @@ usage() {
 	echo
 	echo "Usage: $(basename "$0") [OPTIONS]"
 	echo
-	echo -e "\t-h\tdisplay this help and exit (success)"
-	echo -e "\t-t\ttarget assignment number"
-	echo -e "\tanything else: display this help and exit (fail)"
+	echo -e "  -h\tdisplay this help and exit (success)"
+	echo -e "  -a\ttarget assignment number"
+	echo -e "  anything else: display this help and exit (fail)"
 }
 
 # Default values
@@ -47,5 +47,6 @@ make || exit 0
 
 for item in "$assign/"results*.txt ;do
 	outname=${item%.*}
+	echo "Reading $outname"
 	grep "tests" "$item" | $(./a "$outname")
 done

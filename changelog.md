@@ -10,6 +10,9 @@
 - Somehow programmatically generate the graphs/charts in/from the data in the .csv files (Excel?)
 - Options for switching between which output type to product (in the.cpp file)
 
+## [1.1.1] -2018-09-22
+### Changed
+- help output format for `getMarkLines.sh`
 
 ## [1.1.0] - 2017-09-11
 ### Added
